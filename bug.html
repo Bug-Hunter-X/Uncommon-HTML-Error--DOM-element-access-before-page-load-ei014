@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be visible.
+  </div>
+  <script>
+    // This script attempts to access the div before it's fully loaded.
+    console.log(document.getElementById("myDiv").innerText);
+  </script>
+</body>
+</html>
