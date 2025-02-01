@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be visible.
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // This ensures the script runs after the DOM is fully loaded
+      console.log(document.getElementById("myDiv").innerText);
+    });
+  </script>
+</body>
+</html>
